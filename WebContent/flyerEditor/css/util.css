@@ -1,0 +1,52 @@
+/***********************************************************************
+[A4S] version [v2.0] Copyright ⓒ [2015] kt corp. All rights reserved.
+This is a proprietary software of kt corp, and you may not use this file except in compliance with license agreement with kt corp.
+Any redistribution or use of this software, with or without modification shall be strictly prohibited without prior written approval of kt corp,
+and the copyright notice above does not evidence any actual or intended publication of such software.
+************************************************************************/
+/***********************************************************************
+* 프로그램명 : util CSS
+* 설명     : 편집기 도구모음 CSS
+* 개발자	  : 정승환
+* 최초작성일 : 2015.09.21
+* 수정이력  :
+************************************************************************/
+
+@charset "utf-8";
+
+/*
+ * UI design Select
+ * 크기 고정시킬 때는 <select data-width="100">
+*/
+.uiOriginSelect { display:none;}
+.uiDesignSelect-wrap { display:inline-block; position:relative; z-index:100; vertical-align:middle;}
+.uiDesignSelect-wrap .uiDesignSelect-selected { position:relative; display:block; height:20px; overflow:hidden; border:1px solid #b3b3b3; background-color:#fff; border-radius:2px;}
+.uiDesignSelect-wrap .uiDesignSelect-trigger { display:block; position:relative; height:20px; line-height:20px; font-size:12px; color:#333333; text-decoration:none;}
+.uiDesignSelect-wrap.disabled .uiDesignSelect-trigger { cursor:default;}
+.uiDesignSelect-wrap .uiDesignSelect-text { display:block; margin:0 12px 0 0; text-align:center; font-weight:400;}
+.uiDesignSelect-wrap .uiDesignSelect-ico { position:absolute; right:0; top:0; bottom:0; width:12px; height:20px; background:#e6e6e6 url("../images/common/ico_select_arrow.png") no-repeat 50% 50%; border-left:1px solid #b3b3b3;}
+.uiDesignSelect-wrap .uiDesignSelect-optionList { overflow:hidden; display:none; position:absolute; left:0; top:19px; z-index:1010; overflow:hidden; }
+.uiDesignSelect-wrap .uiDesignSelect-optionList.uiSelect-state-open { border:1px solid #d4d4d4; background-color:white; height: auto !important;}
+.uiDesignSelect-wrap .uiDesignSelect-ul { }
+.uiDesignSelect-wrap .uiDesignSelect-listTrigger { display:block; height:20px; line-height:20px; text-decoration:none; background-color:#fff; color:#aaa; text-indent:10px; text-align:left; font-size:12px;}
+.uiDesignSelect-wrap .uiDesignSelect-listTrigger:hover,
+.uiDesignSelect-wrap .uiDesignSelect-listTrigger.uiSelect-active { background-color:#e71828; color:#fff;}
+.uiDesignSelect-wrap.upSlide .uiDesignSelect-optionList { bottom:20px; top:auto;}
+.uiDesignSelect-wrap.disabled .uiDesignSelect-selected { background:#e71828; border-color:#cdcdcd;}
+.uiDesignSelect-wrap.disabled .uiDesignSelect-ico { background-image:url("../images/ico/ico_select_arrow1_disabled.png");}
+
+.uiDesignSelect-wrap.lognHeight .uiDesignSelect-selected { height:27px;}
+.uiDesignSelect-wrap.lognHeight .uiDesignSelect-trigger { height:27px; line-height:27px;}
+.uiDesignSelect-wrap.lognHeight .uiDesignSelect-optionList { top:26px;}
+.uiDesignSelect-wrap.lognHeight .uiDesignSelect-listTrigger { height:27px; line-height:27px; text-indent:10px;}
+.uiDesignSelect-wrap.lognHeight .uiDesignSelect-ico { height:25px;}
+
+.uiDesignSelect-wrap.alignLeft .uiDesignSelect-text { text-align:left; padding-left:10px;}
+
+.uiDesignSelect-wrap .uiDesignSelect-optionList { height:150px;}
+.uiDesignSelect-wrap .uiDesignSelect-optionList .mCSB_container { margin-right:0;}
+.uiDesignSelect-wrap .uiDesignSelect-optionList .mCSB_scrollTools { width:8px;}
+
+/* jquery UI fix */
+.ui-slider-horizontal { border-color:#b3b3b3;}
+.ui-slider .ui-slider-handle { background:#808080; border-radius:50%; top:-0.35em; width:18px; height:18px;}

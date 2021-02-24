@@ -1,0 +1,379 @@
+/***********************************************************************
+[A4S] version [v2.0] Copyright ⓒ [2015] kt corp. All rights reserved.
+This is a proprietary software of kt corp, and you may not use this file except in compliance with license agreement with kt corp.
+Any redistribution or use of this software, with or without modification shall be strictly prohibited without prior written approval of kt corp,
+and the copyright notice above does not evidence any actual or intended publication of such software.
+************************************************************************/
+/***********************************************************************
+* 프로그램명 : common CSS
+* 설명       : 프런트 화면 기본 CSS
+* 개발자	 : 길상신
+* 최초작성일: 2015.09.21
+* 수정이력  :
+************************************************************************/
+
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'SDGothicNeoaB_italic_bold';
+    font-style:italic;
+    font-weight:bold;
+    src:url('font/SDGothicNeoa-fSm.eot');
+    src: url('font/SDGothicNeoa-fSm.eot?#iefix') format('embedded-opentype'),
+        url('font/SDGothicNeoa-fSm.woff') format('woff'),
+        url('font/SDGothicNeoa-fSm.ttf') format('truetype'),
+        url('font/SDGothicNeoa-fSm.svg#webfont') format('svg');
+}
+
+
+@font-face{
+    font-family: 'KTfontThin';
+    font-style:normal;  
+    src:url('font/KTfontThin.eot');
+    src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontThin.woff') format('woff'),
+        url('font/KTfontThin.ttf') format('truetype'),
+        url('font/KTfontThin.svg#webfont') format('svg');
+}
+ 
+@font-face{
+    font-family: 'KTfontThin_italic';
+    font-style:italic;  
+    src:url('font/KTfontThin.eot');
+    src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontThin.woff') format('woff'),
+        url('font/KTfontThin.ttf') format('truetype'),
+        url('font/KTfontThin.svg#webfont') format('svg');
+}
+ 
+@font-face{
+    font-family: 'KTfontThin_bold';
+    font-style:normal; 
+     font-weight:bold;
+    src:url('font/KTfontThin.eot');
+    src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontThin.woff') format('woff'),
+        url('font/KTfontThin.ttf') format('truetype'),
+        url('font/KTfontThin.svg#webfont') format('svg');
+}
+ 
+@font-face{
+    font-family: 'KTfontThin_italic_bold';
+    font-style:italic; 
+    font-weight:bold;
+    src:url('font/KTfontThin.eot');
+    src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontThin.woff') format('woff'),
+        url('font/KTfontThin.ttf') format('truetype'),
+        url('font/KTfontThin.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family:'KTfontLight';
+    font-style:normal;
+    src:url('font/KTfontLight.eot');
+    src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontLight.woff') format('woff'),
+        url('font/KTfontLight.ttf') format('truetype'),
+        url('font/KTfontLight.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontLight_italic';
+    font-style:italic;  
+    src:url('font/KTfontLight.eot');
+    src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontLight.woff') format('woff'),
+        url('font/KTfontLight.ttf') format('truetype'),
+        url('font/KTfontLight.svg#webfont') format('svg');
+}
+ 
+@font-face{
+    font-family: 'KTfontLight_bold';
+    font-style:normal; 
+    font-weight:bold;
+    src:url('font/KTfontLight.eot');
+    src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontLight.woff') format('woff'),
+        url('font/KTfontLight.ttf') format('truetype'),
+        url('font/KTfontLight.svg#webfont') format('svg');
+}
+ 
+@font-face{
+    font-family: 'KTfontLight_italic_bold';
+    font-style:italic; 
+    font-weight:bold;
+    src:url('font/KTfontLight.eot');
+    src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontLight.woff') format('woff'),
+        url('font/KTfontLight.ttf') format('truetype'),
+        url('font/KTfontLight.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontMedium';
+    font-style:normal; 
+    src:url('font/KTfontMedium.eot');
+    src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontMedium.woff') format('woff'),
+        url('font/KTfontMedium.ttf') format('truetype'),
+        url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontMedium_italic';
+    font-style:italic; 
+    src:url('font/KTfontMedium.eot');
+    src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontMedium.woff') format('woff'),
+        url('font/KTfontMedium.ttf') format('truetype'),
+        url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontMedium_bold';
+    font-style:normal; 
+    font-weight:bold;
+    src:url('font/KTfontMedium.eot');
+    src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontMedium.woff') format('woff'),
+        url('font/KTfontMedium.ttf') format('truetype'),
+        url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontMedium_italic_bold';
+    font-style:italic;
+    font-weight:bold;
+    src:url('font/KTfontMedium.eot');
+    src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontMedium.woff') format('woff'),
+        url('font/KTfontMedium.ttf') format('truetype'),
+        url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontBold';
+    font-style:normal; 
+    src:url('font/KTfontBold.eot');
+    src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontBold.woff') format('woff'),
+        url('font/KTfontBold.ttf') format('truetype'),
+        url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontBold_italic';
+    font-style:italic; 
+    src:url('font/KTfontBold.eot');
+    src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontBold.woff') format('woff'),
+        url('font/KTfontBold.ttf') format('truetype'),
+        url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontBold_bold';
+    font-style:normal;
+    font-weight:bold;
+    src:url('font/KTfontBold.eot');
+    src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontBold.woff') format('woff'),
+        url('font/KTfontBold.ttf') format('truetype'),
+        url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'KTfontBold_italic_bold';
+    font-style:italic; 
+    font-weight:bold;
+    src:url('font/KTfontBold.eot');
+    src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+        url('font/KTfontBold.woff') format('woff'),
+        url('font/KTfontBold.ttf') format('truetype'),
+        url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+
+/* HTML5 Boilerplate */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;   
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0}
+legend, hr, caption { visibility:hidden; font-size:0; width:0; height:0; line-height:0;margin:0;padding:0;}
+
+div, div p{margin: 0px; padding: 0px; word-break:break-all; line-height:1.4}
+a, label{cursor:pointer}
+
+img {behavior:url(assets/iepngfix.htc);}
+body {font-family:'Nanum Gothic',dotum,'돋움',sans-serif; font-size:12px; color:#404040; margin:0; padding:0; width:100%;}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, p, button, header, footer {margin:0; padding:0;}
+h1,h2,h3,h4,h5{font-weight:normal; font-size:13px;}
+ul, ol, li {list-style:none;}
+img, input, fieldset {border:0 none;}
+img, input, select, textarea{vertical-align:middle;}
+address, em {font-style:normal; font-weight:normal;}
+hr {display:none;}
+a {text-decoration:none; text-overflow:ellipsis;}
+a:link, a:hover, a:active {text-decoration:none;}
+a:focus {outline:none;}
+a{color:#333;}
+input:focus, textarea:focus, select:focus{outline:medium none;}
+input, textarea, select {border-radius:0 0 0 0; font-family:dotum,'돋움',sans-serif; font-size:12px; color:#6e6e6e;}
+textarea{resize:none; padding:6px; border-radius:6px; -webkit-border-radius:6px; -mo-border-radius:6px; -o-border-radius:6px; border:solid 1px #cdcdcd;}
+select{height:36px; padding:6px; border-radius:6px; -webkit-border-radius:6px; -mo-border-radius:6px; -o-border-radius:6px; border:solid 1px #cdcdcd;}
+input[type="text"],input[type="password"] {height:22px; padding:6px; padding-top:9px\0/IE9; border-radius:6px; -webkit-border-radius:6px; -mo-border-radius:6px; -o-border-radius:6px; border:solid 1px #cdcdcd;}/* 151130 */
+input[type="checkbox"]{background:#fff; width:20px; height:20px;}
+input[type="checkbox"]:checked{background:#fff; width:20px; height:20px;}
+input[type="radio"] {vertical-align:middle; width:20px; height:20px;}
+table {border-collapse:collapse; border-spacing:0; empty-cells:show;}
+caption {position:absolute; left:-999px; width:0; height:0; font-size:0; visibility:hidden; z-index:-1;}
+header, footer, section, article {display:block;}
+button{padding:0; margin:0; border:0; cursor:pointer; background:none;}
+.hide{font-size:0; height:1px; left:0; line-height:0; overflow:hidden; position:absolute; top: -10000px; visibility:hidden; width:1px;}
+.skipNavi{font-size:0; height: 1px; left:0; line-height:0; overflow:hidden; position:absolute; top:-10000px; visibility:hidden; width:1px;}
+
+/* 공통 */
+.fr {float:right !important;}
+.fl {float:left;}
+.tac {text-align:center !important;}
+.tar {text-align:right;}
+.tal {text-align:left;}
+.cb {clear:both;}
+.clear{*zoom:1}
+.clear:after{content:'';display:block;clear:both}
+
+*::-moz-selection {background-color:#666; color:#f4f5f6;}
+*::selection {background-color:#666; color:#f4f5f6;}
+
+.td_lt{text-decoration:line-through;}
+
+.vab{vertical-align:bottom !important;}
+
+.lh1{line-height:1 !important;}
+.lh12{line-height:1.2 !important;}
+.lh14{line-height:1.4 !important;}
+.lh16{line-height:1.6 !important;}
+.lh18{line-height:1.8 !important;}
+.lh2{line-height:2 !important;}
+.lh22{line-height:2.2 !important;}
+
+.fwb{font-weight:bold;}
+.fwn{font-weight:normal;}
+
+.fc_org{color:#ff5a00 !important;}
+.fc_r1{color:#e71828 !important;}
+
+/* ====== 공통 레이아웃 가로값 ====== */
+.w10{float:left; width:10%;}
+.w20{float:left; width:20%;}
+.w25{float:left; width:25%;}
+.w30{float:left; width:30%;}
+.w35{float:left; width:35%;}
+.w40{float:left; width:40%;}
+.w45{float:left; width:45%;}
+.w50{float:left; width:50%;}
+.w60{float:left; width:60%;}
+.w65{float:left; width:65%;}
+.w70{float:left; width:70%;}
+.w75{float:left; width:75%;}
+.w80{float:left; width:80%;}
+.w90{float:left; width:90%;}
+.w30_first{float:left; width:33.3%;}
+.w30_last{float:left; width:33.4%;}
+
+/* 마진값 */
+.m0{margin:0px !important}
+.mt0{margin-top:0px !important}
+.mt5{margin-top:5px !important}
+.mt8{margin-top:8px !important}
+.mt10{margin-top:10px !important}
+.mt15{margin-top:15px !important}
+.mt20{margin-top:20px !important}
+.mt25{margin-top:25px !important}
+.mt30{margin-top:30px !important}
+.mt40{margin-top:40px !important}
+.mt50{margin-top:50px !important}
+.mt60{margin-top:60px !important}
+.mb0{margin-bottom:0px !important}
+.mb5{margin-bottom:5px !important}
+.mb10{margin-bottom:10px !important}
+.mb15{margin-bottom:15px !important}
+.mb20{margin-bottom:20px !important}
+.mb25{margin-bottom:25px !important}
+.mb30{margin-bottom:30px !important}
+.mb50{margin-bottom:50px !important}
+.mb60{margin-bottom:60px !important}
+.ml0{margin-left:0px !important}
+.ml5{margin-left:5px !important}
+.ml10{margin-left:10px !important}
+.ml15{margin-left:15px !important}
+.ml20{margin-left:20px !important}
+.ml25{margin-left:25px !important}
+.ml50{margin-left:50px !important}
+.mr0{margin-right:0px !important}
+.mr5{margin-right:5px !important}
+.mr10{margin-right:10px !important}
+.mr15{margin-right:15px !important}
+.mr20{margin-right:20px !important}
+.mr25{margin-right:25px !important}
+.mr50{margin-right:50px !important}
+/* 패딩값 */
+.p0{padding:0px !important}
+.p5{padding:5px !important}
+.p10{padding:10px !important}
+.p15{padding:15px !important}
+.p20{padding:20px !important}
+.p25{padding:25px !important}
+.p30{padding:30px !important}
+.pt0{padding-top:0px !important}
+.pt3{padding-top:3px !important}
+.pt5{padding-top:5px !important}
+.pt10{padding-top:10px !important}
+.pt15{padding-top:15px !important}
+.pt20{padding-top:20px !important}
+.pt25{padding-top:25px !important}
+.pt30{padding-top:30px !important}
+.pt40{padding-top:40px !important}
+.pb0{padding-bottom:0px !important}
+.pb10{padding-bottom:10px !important}
+.pb15{padding-bottom:15px !important}
+.pb20{padding-bottom:20px !important}
+.pb25{padding-bottom:25px !important}
+.pb30{padding-bottom:30px !important}
+.pb40{padding-bottom:40px !important}
+.pl0{padding-left:0px !important}
+.pl5{padding-left:5px !important}
+.pl10{padding-left:10px !important}
+.pl15{padding-left:15px !important}
+.pl20{padding-left:20px !important}
+.pl25{padding-left:25px !important}
+.pl30{padding-left:30px !important}
+.pl40{padding-left:40px !important}
+.pl50{padding-left:50px !important}
+.pl60{padding-left:60px !important}
+.pr0{padding-right:0px !important}
+.pr5{padding-right:5px !important}
+.pr10{padding-right:10px !important}
+.pr15{padding-right:15px !important}
+.pr20{padding-right:20px !important}
+.pr25{padding-right:25px !important}
+.pr30{padding-right:30px !important}
+.pr40{padding-right:40px !important}
+.pr50{padding-right:50px !important}
+.pr60{padding-right:60px !important}

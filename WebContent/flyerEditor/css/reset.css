@@ -1,0 +1,285 @@
+﻿/***********************************************************************
+[A4S] version [v2.0] Copyright ⓒ [2015] kt corp. All rights reserved.
+This is a proprietary software of kt corp, and you may not use this file except in compliance with license agreement with kt corp.
+Any redistribution or use of this software, with or without modification shall be strictly prohibited without prior written approval of kt corp,
+and the copyright notice above does not evidence any actual or intended publication of such software.
+************************************************************************/
+/***********************************************************************
+* 프로그램명 : reset CSS
+* 설명     : 편집기 폰트 CSS
+* 개발자	  : 정승환
+* 최초작성일 : 2015.09.21
+* 수정이력  :  2017.11.01
+************************************************************************/
+@charset "utf-8";
+
+@font-face {
+	font-family: 'KTfontThin';
+	font-style: normal;
+	src: url('font/KTfontThin.eot');
+	src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontThin.woff') format('woff'), url('font/KTfontThin.ttf')
+		format('truetype'), url('font/KTfontThin.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontThin_italic';
+	font-style: italic;
+	src: url('font/KTfontThin.eot');
+	src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontThin.woff') format('woff'), url('font/KTfontThin.ttf')
+		format('truetype'), url('font/KTfontThin.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontThin_bold';
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/KTfontThin.eot');
+	src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontThin.woff') format('woff'), url('font/KTfontThin.ttf')
+		format('truetype'), url('font/KTfontThin.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontThin_italic_bold';
+	font-style: italic;
+	font-weight: bold;
+	src: url('font/KTfontThin.eot');
+	src: url('font/KTfontThin.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontThin.woff') format('woff'), url('font/KTfontThin.ttf')
+		format('truetype'), url('font/KTfontThin.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontLight';
+	font-style: normal;
+	src: url('font/KTfontLight.eot');
+	src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontLight.woff') format('woff'),
+		url('font/KTfontLight.ttf') format('truetype'),
+		url('font/KTfontLight.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontLight_italic';
+	font-style: italic;
+	src: url('font/KTfontLight.eot');
+	src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontLight.woff') format('woff'),
+		url('font/KTfontLight.ttf') format('truetype'),
+		url('font/KTfontLight.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontLight_bold';
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/KTfontLight.eot');
+	src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontLight.woff') format('woff'),
+		url('font/KTfontLight.ttf') format('truetype'),
+		url('font/KTfontLight.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontLight_italic_bold';
+	font-style: italic;
+	font-weight: bold;
+	src: url('font/KTfontLight.eot');
+	src: url('font/KTfontLight.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontLight.woff') format('woff'),
+		url('font/KTfontLight.ttf') format('truetype'),
+		url('font/KTfontLight.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontMedium';
+	font-style: normal;
+	src: url('font/KTfontMedium.eot');
+	src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontMedium.woff') format('woff'),
+		url('font/KTfontMedium.ttf') format('truetype'),
+		url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontMedium_italic';
+	font-style: italic;
+	src: url('font/KTfontMedium.eot');
+	src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontMedium.woff') format('woff'),
+		url('font/KTfontMedium.ttf') format('truetype'),
+		url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontMedium_bold';
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/KTfontMedium.eot');
+	src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontMedium.woff') format('woff'),
+		url('font/KTfontMedium.ttf') format('truetype'),
+		url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontMedium_italic_bold';
+	font-style: italic;
+	font-weight: bold;
+	src: url('font/KTfontMedium.eot');
+	src: url('font/KTfontMedium.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontMedium.woff') format('woff'),
+		url('font/KTfontMedium.ttf') format('truetype'),
+		url('font/KTfontMedium.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontBold';
+	font-style: normal;
+	src: url('font/KTfontBold.eot');
+	src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontBold.woff') format('woff'), url('font/KTfontBold.ttf')
+		format('truetype'), url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontBold_italic';
+	font-style: italic;
+	src: url('font/KTfontBold.eot');
+	src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontBold.woff') format('woff'), url('font/KTfontBold.ttf')
+		format('truetype'), url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontBold_bold';
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/KTfontBold.eot');
+	src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontBold.woff') format('woff'), url('font/KTfontBold.ttf')
+		format('truetype'), url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+@font-face {
+	font-family: 'KTfontBold_italic_bold';
+	font-style: italic;
+	font-weight: bold;
+	src: url('font/KTfontBold.eot');
+	src: url('font/KTfontBold.eot?#iefix') format('embedded-opentype'),
+		url('font/KTfontBold.woff') format('woff'), url('font/KTfontBold.ttf')
+		format('truetype'), url('font/KTfontBold.svg#webfont') format('svg');
+}
+
+/* normalize */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	color: inherit;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+input,select,textarea,button {
+	font: inherit;
+	color: inherit;
+}
+
+body {
+	line-height: 1;
+}
+
+article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote
+	{
+	display: block;
+}
+
+ul,ol,li {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+mark {
+	background: none;
+}
+
+abbr[title],dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+hr {
+	display: none;
+}
+
+img {
+	border: 0 none;
+}
+
+input,button,select,a,img {
+	vertical-align: middle;
+}
+
+button {
+	position: relative;
+	background: none;
+	border: 0 none;
+	cursor: pointer;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+button * {
+	margin: 0;
+	padding: 0;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
